@@ -1,0 +1,115 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.app {
+	width: 100%;
+	height: 100vh;
+	//display: flex;
+
+	.is-title {
+		width: 100%;
+		height: 29px;
+		background-color: #E3E9FF;
+
+		.title {
+			font-size: 20px;
+			padding-top: 2px;
+			margin-left: 24px;
+			display: flex;
+			align-items: center;
+			font-family: Arial,sans-serif;
+		}
+	}
+
+	.is-menu {
+		height: 29px;
+		width: 100%;
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		box-shadow: 0 0 6px #ccc, 0 12px 17px #eee inset;
+		background: #dcdcdc;
+
+		.items {
+			display: flex;
+			align-items: center;
+			padding-left: 24px;
+			width: 100%;
+
+			.options-left, .options-right {
+				a.options {
+					color: #2f4e6f;
+					font-family: Arial, sans-serif;
+					font-size: 12px;
+					display: inline-flex;
+					border-right: 1px solid #ccc;
+					padding-right: 10px;
+					padding-left: 10px;
+					cursor: pointer;
+
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+
+			.options-left {
+				display: flex;
+				justify-content: flex-start;
+				width: 70%;
+
+				a.options:nth-child(6) {
+					border-right: 2px solid transparent;
+				}
+			}
+
+			.options-right {
+				display: flex;
+				justify-content: flex-end;
+				width: 30%;
+
+				a.options:nth-child(3) {
+					border-right: 2px solid transparent;
+				}
+			}
+		}
+
+	}
+
+	.is-content {
+		width: 100%;
+
+		.content {
+			width: 100%;
+			display: flex;
+
+			.is-note {
+				width: 100%;
+				padding-left: 24px;
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+
+				.note, .list {
+					border-bottom: 1px solid #f7e084;
+					input {
+						display: inline-flex;
+						border: 0;
+						//border-bottom: 1px solid #f7e084;
+						outline: 0;
+
+						&:checked, &:active, &:enabled {
+							//background-color: #f7e084;
+						}
+					}
+
+					.note-input {
+						width: 45%;
+					}
+				}
+			}
+
+		}
+	}
+}
